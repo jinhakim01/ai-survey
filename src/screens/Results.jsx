@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import SectionHead from '../components/SectionHead.jsx';
 import BarChart from '../components/BarChart.jsx';
 import TypeCard, { TypeDistribution } from '../components/TypeCard.jsx';
+import SummaryTable from '../components/SummaryTable.jsx';
 import AboutSection from '../components/AboutSection.jsx';
 import { useResponses } from '../hooks/useResponses.js';
 import { summarize, classify } from '../lib/stats.js';
@@ -49,6 +50,8 @@ export default function Results({ mine }) {
           </p>
         </section>
       )}
+
+      <SummaryTable summary={s} myMajor={mine?.major} />
 
       <section className="questions">
         <p className="legend-note">

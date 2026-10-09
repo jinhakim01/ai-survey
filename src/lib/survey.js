@@ -1,9 +1,9 @@
 export const MAJORS = [
-  { id: 'engineering', label: '공학' },
-  { id: 'humanities', label: '인문·사회' },
-  { id: 'business', label: '경영·경제' },
-  { id: 'science', label: '자연과학' },
-  { id: 'arts', label: '예체능·기타' },
+  { id: 'engineering', short: '공학', label: '공학' },
+  { id: 'humanities', short: '인문', label: '인문·사회' },
+  { id: 'business', short: '경영', label: '경영·경제' },
+  { id: 'science', short: '자연', label: '자연과학' },
+  { id: 'arts', short: '예체', label: '예체능·기타' },
 ];
 
 export const majorLabel = (id) => MAJORS.find((m) => m.id === id)?.label ?? id;
